@@ -1,0 +1,157 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1 px;
+}
+
+/*.container {
+  margin: 20px auto;
+  min-width: 480px;
+  padding: 0px 20px 20px 20px;
+  width: 50%;
+}*/
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  color: gray;
+  text-align: center;
+}
+
+form {
+  display: block;
+  margin: 30px auto 80px auto;
+  width: 400px;
+}
+
+input[type="text"] {
+  width:300px;
+}
+
+input[type="radio"] {
+  margin-left: 15px;
+}
+
+.hidden{
+  display:none;
+}
+
+#attribution {
+  font-size: 0.75em;
+  margin: 10px auto;
+  text-align: center;
+  width: 200px;
+}
+
+#attribution a {
+  color: gray;
+  text-decoration: none;
+}
+
+#attribution a:hover {
+  text-decoration: underline;
+}
+
+.food {
+  margin: 32px auto 32px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.food-name {
+  color: black;
+  font-size: 1.6em;
+}
+
+.serving-size {
+  color: gray;
+}
+
+.macros {
+  margin: 0 auto;
+  text-align: left;
+  width: 165px;
+}
+
+.calories {
+  color: #00aedb;
+}
+
+.carbs {
+  color: #00b159;
+}
+
+.fat {
+  color: #f37735;
+}
+
+.protein {
+  color: #d11141;
+}
+
+.number {
+  font-size: 1.6em;
+  margin-right: 10px;
+}
+
+
+/*******************
+BOOTSTRAP OVERIDES
+********************/
+
+.sidebar {
+width: 324px;
+padding: 12px;
+min-height: 800px;
+display: inline-block;
+float: left;
+}
+
+.sidebar {
+  font-size: 1.3em;
+}
+
+.input-sidebar {
+  width: 300px;
+}
+
+.form-control {
+  display: inline-block;
+  width: 190px !important;
+}
+
+.input-group-btn {
+  position: absolute;
+  margin-top: -46px;
+  margin-left: 177px;
+}
+
+.panel.panel-default {
+  margin-top: -50px;
+}
+
+.dropdown-menu {
+  min-width: 126px;
+}
+
+.main-content {
+  padding: 12px 0;
+  width: 846px;
+  min-height: 800px;
+  display: inline-block;
+  float: right;
+}
+
+#svg {
+width: 675px;
+margin: 82px 94px;
+display: inline-block;
+}
+
+.main-header {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.3em;
+  color: gray;
+  text-align: center;
+  margin-top: 23px;
+}

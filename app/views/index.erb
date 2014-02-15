@@ -1,0 +1,82 @@
+<div class="container">
+  <div class="row">
+    <div class="sidebar">
+      <h2>What are the macronutrients of</h2>
+      <div class="sidebar-form">
+        <form action ="/foods" method="get" class="form-search">
+          <div class="input-group-lg input-sidebar">
+            <input type="text" name="food" class="form-control" placeholder="milk, banana..."
+            <% if @search_term %> value="<%=@search_term %>" <% end %> >
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-default">Search</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><input type="radio" name="results_number" value="1" > 1 result</li>
+                <li><input type="radio" name="results_number" value="5" checked> 5 results</li>
+              </ul>
+            </div><!-- /btn-group -->
+            </div>
+          </form>
+        </div>
+        <div class="sidebar-data">
+        <% if @foods && !@foods.empty? %>
+          <div id="search-results">
+            <div class="panel-group" id="accordion">
+              <% order = ["One", "Two", "Three", "Four", "Five"] %>
+              <% @foods.each_with_index do |food, index| %>
+                <div class="panel panel-default">
+                  <div class="food">
+                    <div class="panel-heading">
+                      <h2 class="food-name panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= order[index] %>">
+                          <%= food.name %>
+                        </a>
+                      </h2>
+                    </div>
+                    <div id="collapse<%= order[index] %>" class="panel-collapse collapse <% if index == 0 %>in<% end %>">
+                      <div class="panel-body">
+                        <p class="serving-size">Per 100g serving, <%= food.name %> contain(s):</p>
+                        <div class="macros">
+                          <p class="calories"><span class="number"><%= food.calories %></span> calories</p>
+                          <p class="carbs"><span class="number"><%= food.carbs %></span> g carbs</p>
+                          <p class="fat"><span class="number"><%= food.fat %></span> g fat</p>
+                          <p class="protein"><span class="number"><%= food.protein %></span> g protein</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        <% elsif @foods %>
+          <p class="error">Food not found!</p>
+        <% end %>
+      </div>
+    </div>
+    <div class="main-content">
+      <h2 class="center main-header">Visualization</h2>
+      <svg id="svg">
+      </svg>
+    </div>
+  </div>
+</div>
+<% if @foods && !@foods.empty? %>
+  <div class="hidden">
+  <% @foods.each do |food| %>
+      <div class="<%= food.name %>">
+        <div data-nutrient= "carbs" data-value="<%= food.carbs %>"></div>
+        <div data-nutrient= "fat" data-value="<%= food.fat %>"></div>
+        <div data-nutrient= "protein" data-value="<%= food.protein %>"></div>
+      </div>
+  <% end %>
+  </div>
+<% end %>
+
+<div id="attribution">
+  <!-- Begin FatSecret Platform API HTML Attribution Snippet -->
+  <a href="http://platform.fatsecret.com">Powered by FatSecret</a>
+  <!-- End FatSecret Platform API HTML Attribution Snippet -->
+</div>
