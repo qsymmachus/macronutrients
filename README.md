@@ -13,3 +13,13 @@ Matt Higgins, Roy Lee, Eli Shkurkin, Patrick Vilhena, John Olmsted
 1. Meal planning?
 2. Search by nutrient!
 3. Bootstrap
+
+###To launch the app on localhost
+1. Launch redis: 
+$ redis-server /usr/local/etc/redis.conf
+
+2. Launch sidekiq:
+$ sidekiq -r./config/environment.rb
+
+3. Launch shotgun:
+$ shotgun
