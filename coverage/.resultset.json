@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/apprentice/macronutrients/config/environment.rb": [
+      "/Users/john/Code/macronutrients/config/environment.rb": [
         null,
         null,
         null,
@@ -59,7 +59,7 @@
         null,
         1
       ],
-      "/Users/apprentice/macronutrients/app/controllers/index.rb": [
+      "/Users/john/Code/macronutrients/app/controllers/index.rb": [
         1,
         null,
         0,
@@ -70,8 +70,12 @@
         0,
         0,
         0,
-        0,
-        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         0,
         null,
@@ -80,7 +84,7 @@
         0,
         null
       ],
-      "/Users/apprentice/macronutrients/app/helpers/fatsecret.rb": [
+      "/Users/john/Code/macronutrients/app/helpers/fatsecret.rb": [
         null,
         1,
         1,
@@ -170,7 +174,7 @@
         null,
         null
       ],
-      "/Users/apprentice/macronutrients/config/database.rb": [
+      "/Users/john/Code/macronutrients/config/database.rb": [
         null,
         1,
         0,
@@ -214,12 +218,12 @@
         null,
         null
       ],
-      "/Users/apprentice/macronutrients/app/models/food_nutrition.rb": [
+      "/Users/john/Code/macronutrients/app/models/food_nutrition.rb": [
         1,
         1,
         null
       ],
-      "/Users/apprentice/macronutrients/spec/nutritiongetter_spec.rb": [
+      "/Users/john/Code/macronutrients/spec/nutritiongetter_spec.rb": [
         1,
         null,
         1,
@@ -265,12 +269,12 @@
         null,
         null
       ],
-      "/Users/apprentice/macronutrients/app/models/result.rb": [
+      "/Users/john/Code/macronutrients/app/models/result.rb": [
         1,
         1,
         null
       ]
     },
-    "timestamp": 1392421512
+    "timestamp": 1392517701
   }
 }
