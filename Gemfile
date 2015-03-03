@@ -24,8 +24,6 @@ gem 'dotenv'
 
 gem 'rspec'
 
-gem 'simplecov', :require => false, :group => :test
-
 gem 'redis'
 gem 'sidekiq'
 
