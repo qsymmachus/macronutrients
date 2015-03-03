@@ -100,11 +100,12 @@ BOOTSTRAP OVERIDES
 ********************/
 
 .sidebar {
-width: 324px;
-padding: 12px;
-min-height: 800px;
-display: inline-block;
-float: left;
+  width: 100vw;
+  max-width: 324px;
+  padding: 0.6em;
+  min-height: 800px;
+  display: inline-block;
+  float: left;
 }
 
 .sidebar {
@@ -144,6 +145,7 @@ float: left;
 
 #svg {
 width: 675px;
+height: 500px;
 margin: 82px 94px;
 display: inline-block;
 }

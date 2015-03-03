@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.1.2'
 
 # PostgreSQL driver
 gem 'pg'
@@ -23,8 +23,6 @@ gem 'fatsecret-api'
 gem 'dotenv'
 
 gem 'rspec'
-
-gem 'simplecov', :require => false, :group => :test
 
 gem 'redis'
 gem 'sidekiq'
